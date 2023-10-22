@@ -9,18 +9,17 @@
 /* Begin PBXBuildFile section */
 		D80165F82AE51FF5007D789E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80165F72AE51FF5007D789E /* AppDelegate.swift */; };
 		D80165FA2AE51FF5007D789E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80165F92AE51FF5007D789E /* SceneDelegate.swift */; };
-		D80165FC2AE51FF5007D789E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80165FB2AE51FF5007D789E /* ViewController.swift */; };
-		D80165FF2AE51FF5007D789E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80165FD2AE51FF5007D789E /* Main.storyboard */; };
+		D80165FC2AE51FF5007D789E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80165FB2AE51FF5007D789E /* MainViewController.swift */; };
 		D80166012AE51FF6007D789E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80166002AE51FF6007D789E /* Assets.xcassets */; };
 		D80166042AE51FF6007D789E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80166022AE51FF6007D789E /* LaunchScreen.storyboard */; };
+		D80166112AE5220A007D789E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D80166102AE5220A007D789E /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D80165F42AE51FF5007D789E /* START-HW12-Arken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "START-HW12-Arken.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80165F72AE51FF5007D789E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D80165F92AE51FF5007D789E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D80165FB2AE51FF5007D789E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D80165FE2AE51FF5007D789E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D80165FB2AE51FF5007D789E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D80166002AE51FF6007D789E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D80166032AE51FF6007D789E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D80166052AE51FF6007D789E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D80166112AE5220A007D789E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +56,46 @@
 		D80165F62AE51FF5007D789E /* START-HW12-Arken */ = {
 			isa = PBXGroup;
 			children = (
-				D80165F72AE51FF5007D789E /* AppDelegate.swift */,
-				D80165F92AE51FF5007D789E /* SceneDelegate.swift */,
-				D80165FB2AE51FF5007D789E /* ViewController.swift */,
-				D80165FD2AE51FF5007D789E /* Main.storyboard */,
-				D80166002AE51FF6007D789E /* Assets.xcassets */,
-				D80166022AE51FF6007D789E /* LaunchScreen.storyboard */,
-				D80166052AE51FF6007D789E /* Info.plist */,
+				D801660E2AE52046007D789E /* AppDelegates */,
+				D801660D2AE52037007D789E /* Controllers */,
+				D801660C2AE52027007D789E /* Views */,
+				D801660B2AE52015007D789E /* Assets */,
 			);
 			path = "START-HW12-Arken";
+			sourceTree = "<group>";
+		};
+		D801660B2AE52015007D789E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D80166002AE51FF6007D789E /* Assets.xcassets */,
+				D80166052AE51FF6007D789E /* Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		D801660C2AE52027007D789E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D80166022AE51FF6007D789E /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D801660D2AE52037007D789E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D80165FB2AE51FF5007D789E /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D801660E2AE52046007D789E /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				D80165F72AE51FF5007D789E /* AppDelegate.swift */,
+				D80165F92AE51FF5007D789E /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +114,9 @@
 			dependencies = (
 			);
 			name = "START-HW12-Arken";
+			packageProductDependencies = (
+				D80166102AE5220A007D789E /* SnapKit */,
+			);
 			productName = "START-HW12-Arken";
 			productReference = D80165F42AE51FF5007D789E /* START-HW12-Arken.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +145,9 @@
 				Base,
 			);
 			mainGroup = D80165EB2AE51FF5007D789E;
+			packageReferences = (
+				D801660F2AE5220A007D789E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = D80165F52AE51FF5007D789E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +164,6 @@
 			files = (
 				D80166042AE51FF6007D789E /* LaunchScreen.storyboard in Resources */,
 				D80166012AE51FF6007D789E /* Assets.xcassets in Resources */,
-				D80165FF2AE51FF5007D789E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D80165FC2AE51FF5007D789E /* ViewController.swift in Sources */,
+				D80165FC2AE51FF5007D789E /* MainViewController.swift in Sources */,
 				D80165F82AE51FF5007D789E /* AppDelegate.swift in Sources */,
 				D80165FA2AE51FF5007D789E /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +183,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D80165FD2AE51FF5007D789E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D80165FE2AE51FF5007D789E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D80166022AE51FF6007D789E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,10 +316,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "START-HW12-Arken/Info.plist";
+				INFOPLIST_FILE = "START-HW12-Arken/Assets/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,10 +342,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "START-HW12-Arken/Info.plist";
+				INFOPLIST_FILE = "START-HW12-Arken/Assets/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +382,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D801660F2AE5220A007D789E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D80166102AE5220A007D789E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D801660F2AE5220A007D789E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D80165EC2AE51FF5007D789E /* Project object */;
 }
