@@ -15,8 +15,8 @@ final class MainViewController: UIViewController {
     private var isStarted = false
     
     private var timer = Timer()
-    private var timerInFocusState = 6
-    private var timerInRelaxState = 5
+    private var timerInFocusState = 20
+    private var timerInRelaxState = 10
     private lazy var timerDuration = timerInFocusState
     
     private lazy var timerLabel: UILabel = {

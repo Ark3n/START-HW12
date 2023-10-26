@@ -61,6 +61,7 @@
 				D801660E2AE52046007D789E /* AppDelegates */,
 				D801660D2AE52037007D789E /* Controllers */,
 				D801660C2AE52027007D789E /* Views */,
+				D8F71B4E2AE85345002755D2 /* Utils */,
 				D801660B2AE52015007D789E /* Assets */,
 			);
 			path = "START-HW12-Arken";
@@ -87,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				D80165FB2AE51FF5007D789E /* MainViewController.swift */,
-				D8F71B4C2AE81F64002755D2 /* CALayer+Ext.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -99,6 +99,14 @@
 				D80165F92AE51FF5007D789E /* SceneDelegate.swift */,
 			);
 			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		D8F71B4E2AE85345002755D2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D8F71B4C2AE81F64002755D2 /* CALayer+Ext.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
